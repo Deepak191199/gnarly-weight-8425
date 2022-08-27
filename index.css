@@ -1,5 +1,7 @@
 * {
     font-family: Open Sans, sans-serif !important;
+    margin: 0px;
+    padding:0px;
   }
   header {
     background-color: teal;
@@ -151,11 +153,17 @@
   }
   /* next part */
   #svgs {
-    width: 100%;
+    width: 30%;
+    height: 90%;
     display: flex;
     margin: auto;
     margin-top: 50px;
     margin-left: 120px;
+    
+    
+  }
+  #svgs>h3{
+    text-align: center;
   }
   #svgs > #insvg1,
   #svgs > #insvg2,
@@ -271,6 +279,7 @@
   .offers {
     display: flex;
     margin-left: 120px;
+    
   }
   .offers h2 {
     padding-left: 30px;
@@ -284,7 +293,7 @@
   .offerslide {
     display: flex;
     border: 2px solid lightgrey;
-    width: 500px;
+    width: 200px;
     height: 100px;
     text-align: center;
     align-items: center;
@@ -295,6 +304,9 @@
   .carousel {
     margin-left: 70px;
     margin-right: 85px;
+    color: #4f585e;
+    font-weight: bold;
+    
   }
   .offerslide > img {
     width: 70px;
@@ -326,16 +338,17 @@
   
   #lab {
     width: 100%;
-    background-color: rgb(212, 226, 250);
-    height: 300px;
+    background-color: rgb(88, 160, 29);
+    height: 400px;
     padding: 3% 5%;
     margin: 5% auto;
     margin-bottom: 12%;
+    background-color: rgb(142, 233, 233);
   }
   #lab > h3 {
     font-weight: 700;
     font-size: 20px;
-    color: rgb(79, 88, 94);
+    color: rgb(117, 158, 185);
   }
   #slid {
     display: flex;
@@ -403,6 +416,7 @@
     display: flex;
     float: right;
     margin-top: -50px;
+    /* border: 1px solid red; */
   }
   #buts > button {
     background-color: white;
@@ -908,6 +922,10 @@
     margin: auto;
     
   }
+  .review>p{
+
+  font-family: Arial, Helvetica, sans-serif;
+  }  
   hr {
     height: 0.5px;
     background-color: rgb(238, 235, 235);
@@ -982,26 +1000,31 @@
     letter-spacing: -0.3px;
   }
   #bot3 {
-    background-color: rgb(244, 247, 251);
+    background-color: rgb(55, 62, 71);
     width: 100%;
     margin: 0;
     padding: 5% 5%;
   }
   #b3first {
     display: flex;
+    background-color: rgb(167, 135, 135);
   }
   #feat {
     display: flex;
     flex: 3;
+    background-color: rgb(78, 201, 201);
+    height: 100%;
+    width: 100%;
   }
   #feat > div {
     flex-basis: 100%;
   }
   #b3first p {
-    color: rgb(79, 88, 94);
+    color: rgb(113, 162, 196);
     line-height: 1.1;
     font-size: 16px;
     font-weight: 400;
+    
   }
   span > img {
     height: 2rem;
@@ -1025,7 +1048,7 @@
     flex: 1;
   }
   #social > img {
-    width: 50px;
+    width: 150px;
     background-color: teal;
     padding: 5px;
     border-radius: 22px;
@@ -1057,5 +1080,44 @@
   #pay > span > img {
     height: 2rem;
   }
-  
+  .carousel{
+    /* display: flex;
+    flex-direction:row;
+    height: 200px;
+     */
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     gap: 15px;
+    
+  }
+  .offerslide{
+    border: 4px double teal;
+
+     height: auto;
+     width: 95%;
+     
+    /* width: 10%; */
+    /* grid-template-columns:repeat(1,4fr);
+    grid-row: auto; */
+  }
+  .review{
+
+    display: flex;
+    flex-direction: column;
+    /* height: auto;
+    width: auto; */
+    
+  }
+  .review>p{
+    margin-bottom: 30px;
+  }
+  .catego{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .flexing{
+    display: flex;
+  }
   
